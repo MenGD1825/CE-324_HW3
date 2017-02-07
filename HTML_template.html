@@ -30,7 +30,7 @@ function init() {
 		// Create a renderer 
 		var renderer = new THREE.WebGLRenderer();
 		renderer.setSize(WIDTH, HEIGHT);
-		renderer.setClearColor(new THREE.Color(0xEEEEEE));
+		renderer.setClearColor(new THREE.Color(0x5F9EA0));
 		
 		// add the output of the renderer to the html element
 		document.getElementById("WebGL-output").appendChild(renderer.domElement);
@@ -53,7 +53,7 @@ function init() {
 		
        // create a cube
         var cubeGeometry = new THREE.BoxGeometry(4, 4, 4);
-        var cubeMaterial = new THREE.MeshBasicMaterial({color: 0xFF0000, wireframe: true});
+        var cubeMaterial = new THREE.MeshBasicMaterial({color: 0xFFA07A, wireframe: true});
         var cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
         cube.position.x = -4;
         cube.position.y = 3;
